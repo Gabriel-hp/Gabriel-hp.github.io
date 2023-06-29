@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500;600;700&display=swap');
+
+*{
+   
+    box-sizing: border-box;
+    text-decoration: none;
+} 
+body{
+    margin: 0;
+    padding: 0;
+    background: #616161;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #9bc5c3, #616161);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #9bc5c3, #616161); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
+    height: 100%;
+    
+}
+/*slider do banner*/
+section.slider{
+    
+    margin: 0% auto;
+    width: 100%;
+    height: auto;
+    padding: 0 ;
+    overflow: hidden;
+}
+
+.slider-content{
+    width: 400%;
+    display: flex;
+}
+
+
+.slider-content input{
+    display: none;
+}
+
+.slide-box{
+    width: 25%;
+    height: auto;
+    position: relative;
+    text-align: center;
+    transition: 1.5s;
+}
+
+.slide-box img{
+    width: 100%;
+}
+
+ .nav-manual, .nav-auto{
+    position: absolute;
+    width: 100%;
+    margin-top: 35%;
+    display: flex;
+    justify-content: center;
+ }
+ 
+
+      /*trocar de banner*/
+ #radio1:checked ~ .primeiro{
+    margin-left: 0%;
+ }
+
+ #radio2:checked ~ .primeiro{
+    margin-left: -25%;
+ }
+
+ #radio3:checked ~ .primeiro{
+    margin-left: -50%;
+ }
+
+
+/*formatacao dos icons */
+i{
+    font-family: 'Inter', sans-serif;
+    width:27px;
+    height:5px;
+}
+
+
+/*formatacao da fonte principal*/
+
+/*formatacao dos icons */
+i{
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+}
+
+
+  /*botoes do menu*/
+nav{
+    top: 40%;
+    position: absolute;
+	height: auto;
+    width: 100%;
+	display: flex;
+    
+}
+ul{
+    margin: 0 auto;    
+}
+
+
+nav li{
+    display: inline-block;
+    background-color: #E9E9E9;
+    color: #C4D3D3;
+    font-size: 5px;
+}
+
+/* formatacao menu principal*/
+.dropdown{
+    padding:10px 35px;
+	margin: 5px;
+	background: #013D4B;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 8.5%;
+    border-radius: 2px;
+    transition: 0.5s;
+    text-align: center;
+     cursor: pointer;
+
+}
+.dropdown h1{
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+
+    text-align: center;
+}
+
+/*formatacao sub-menu*/
+.dropdown-menu{ 
+    width:166px;
+    height:auto;
+    box-shadow: 4px 4px 4px rgba(92, 15, 15, 0.25);
+    background-color: #ffffff;
+    border-radius: 5px;
+   
+}
+/*fonte menu e sub-menu*/
+nav li a{
+    display: inline-block;
+    color: #2c2c2c;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    border-radius: 10px;
+}
+/*transicao submenu */
+nav li a:hover{
+    background-color: #013D4B;
+    color: #E9E9E9;
+    transition-delay: 0.04s;
+}
+/*transicao menu*/
+.dropdown:hover{
+    background-color: #bdbdbd;
+    transition-delay: 0.04s;
+    color: #013D4B;
+}
+
+/*posicao do menu*/
+.dropdown-menu{
+    background-color: #d8d8d8;
+    position: absolute;
+    box-shadow: 0 0 5px rgb(14, 14, 14);
+    display: none;
+    padding: 7px;
+    margin: 7px -35px;
+}
+/*posicao menu*/
+.dropdown-menu a{
+    display: block;
+    color: rgb(63, 63, 63);
+
+}
+
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+ 
+/*espacamento entre div*/
+.dropdown:not(:last-child){
+    margin-right: 5px;
+}
+
+
+/*botões centro*/
+  .box-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    margin-top: 145px;
+    gap: 15px;
+  }
+
+  .box{
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    width: 22%;
+    background-color: #013D4B;
+    text-align: center;
+    border-radius: 15px;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    color: #bdbdbd;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: .5s;
+    cursor: pointer;
+  }
+
+/*animação*/
+.box:hover{
+    background-color: #bdbdbd;
+    color: #013D4B;
+}
+
+  /*roda pé*/
+  footer{
+    position: absolute;
+    bottom: 0;
+    margin-top: auto;
+    border-top: 0.4px solid #ffffff34;
+    margin-left: 40%;
+  }
+    /*tamanho e cor da fonte do roda pé*/
+  footer p i{
+    font-size: 10px;
+    color: #4a4a4a;
+  }
+  
+
+  aside{
+    display: none;
+    text-decoration: none;
+  }
+
+  .icon-menu i{
+    margin-right: 15px;
+    color: #ff0000;
+    font-size: 25px;
+  }
+
+  .mobile{
+    display: none;
+  }
+
+
+  
+  @media only screen and (max-width: 950px) {
+    /* responsividade mobile */
+
+    
+
+    ul{
+      display: none;
+    }
+
+
+    .links{
+        display: block;
+        margin-top: 13%;
+    }
+
+    aside{
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+        overflow: hidden;
+        color: #bdbdbd;
+        font-size: 10px;
+        text-decoration: none;
+    }
+ 
+
+    #Barra-menu{
+        background-color: #013D4B;
+        width: 0px;
+        height: 659px;
+        transition: 0.5s all;
+    }
+    
+
+    .dropdown{
+        margin-top: 10px;
+        width: 90%;
+        box-shadow: none;
+        height: 40px;
+        background-color: #022c35;
+        text-align: center;
+    }
+
+    .dropdown:hover{
+        background-color: #bdbdbd;
+        color: #013D4B;
+    }
+
+    .dropdown-menu{
+        margin-top: -10px;
+        width: 150px;
+        background-color: #ffffff;
+        font-size: 16px;
+        color: rgb(44, 44, 44)
+    }
+
+    .dropdown-menu a{
+        color: #3d3d3d;
+        font-family: sans-serif;
+    }
+    .dropdown-menu a:hover{
+        background-color: #3c3c3d;
+        color: #E9E9E9;
+    }
+
+
+  }
+
+
+  @media only screen and (max-width: 950px){
+    .box-container{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .box{
+        width: 80%;
+    }
+    
+    footer{
+        margin-right: auto;
+        margin-top: 40%;
+    }
+  }
+
+
+  @media only screen and (max-width: 650px){
+    .img-desktop{
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
+
+    .box-container{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        
+    }
+
+    .box{
+        
+        width: 50%;
+    }
+    
+  }
+
